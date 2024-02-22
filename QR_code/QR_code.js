@@ -22,7 +22,7 @@ const img=document.getElementById("img")
 function load_img(){
     const inputvalue=qr_input.value
     console.log(inputvalue.search(/[a-z]/))
-    if (inputvalue==null){
+    if (!inputvalue){
         alert("Please enter a valid URL")
     }
     else{
